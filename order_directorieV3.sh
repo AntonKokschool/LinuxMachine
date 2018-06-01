@@ -1,14 +1,14 @@
-x#!/bin/bash
+#!/bin/bash
 source=$1
 dest=$2
-type=$3
+soort=$3
 echo "source is $source"
 echo "destination is $dest"
 echo "type is $type"
-if [ "$type" == "maand" ]; then
+if [ "$soort" == "maand" ]; then
 	echo 'maand##########################################################'
 	type='%m'
-elif [ "$type" == "week" ]; then
+elif [ "$soort" == "week" ]; then
 	echo 'week##########################################################'
 	type='%V'
 else
@@ -24,9 +24,11 @@ do
 	else
 		echo "directory $dest already exist";
 	fi
-	date -r "$file" +"$type"
-	#cp "$file" "$dest/${file##*/}"
-	echo "$file" + "$dest/${file##*/}"
+	filedatum=$(date -r $file +$type)
+	echo "$filedatum is dit111111111111111111111111111111111111111111111111111"
+	#cp "$file" "$dest/$soort$filedatum/${file##*/}"
+	echo "$file" + "$dest/$soort$filedatum/${file##*/}"
+	echo "${file##*/}" #filename  only
 	echo 'made file'
 	#rm "$file"
 	echo 'removed file'
