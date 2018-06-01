@@ -1,0 +1,92 @@
+Sorting...
+Full Text Search...
+apache2/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache HTTP Server
+
+apache2-bin/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache HTTP Server (modules and other binary files)
+
+apache2-data/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 all
+  Apache HTTP Server (common files)
+
+apache2-dbg/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache debugging symbols
+
+apache2-dev/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache HTTP Server (development headers)
+
+apache2-doc/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 all
+  Apache HTTP Server (on-site documentation)
+
+apache2-ssl-dev/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache HTTP Server (mod_ssl development headers)
+
+apache2-utils/bionic-updates,bionic-security 2.4.29-1ubuntu4.1 amd64
+  Apache HTTP Server (utility programs for web servers)
+
+libapache2-mod-apparmor/bionic 2.12-4ubuntu5 amd64
+  changehat AppArmor library as an Apache module
+
+libapache2-mod-auth-mellon/bionic 0.13.1-1build2 amd64
+  SAML 2.0 authentication module for Apache
+
+libapache2-mod-auth-pgsql/bionic 2.0.3-6.1ubuntu1 amd64
+  Module for Apache2 which provides PostgreSQL authentication
+
+libapache2-mod-auth-plain/bionic 2.0.52 amd64
+  Module for Apache2 which provides plaintext authentication
+
+libapache2-mod-perl2/bionic 2.0.10-2ubuntu3 amd64
+  Integration of perl with the Apache2 web server
+
+libapache2-mod-perl2-dev/bionic 2.0.10-2ubuntu3 all
+  Integration of perl with the Apache2 web server - development files
+
+libapache2-mod-perl2-doc/bionic 2.0.10-2ubuntu3 all
+  Integration of perl with the Apache2 web server - documentation
+
+libapache2-mod-php/bionic 1:7.2+60ubuntu1 all
+  server-side, HTML-embedded scripting language (Apache 2 module) (default)
+
+libapache2-mod-php7.2/bionic-updates,bionic-security 7.2.5-0ubuntu0.18.04.1 amd64
+  server-side, HTML-embedded scripting language (Apache 2 module)
+
+libapache2-mod-python/bionic 3.3.1-11ubuntu2 amd64
+  Python-embedding module for Apache 2
+
+libapache2-mod-python-doc/bionic 3.3.1-11ubuntu2 all
+  Python-embedding module for Apache 2 - documentation
+
+libapache2-mod-wsgi/bionic 4.5.17-1 amd64
+  Python WSGI adapter module for Apache
+
+libapache2-reload-perl/bionic 0.13-1 all
+  module for reloading Perl modules when changed on disk
+
+libapr1/bionic 1.6.3-2 amd64
+  Apache Portable Runtime Library
+
+libapr1-dbg/bionic 1.6.3-2 amd64
+  Apache Portable Runtime Library - Debugging Symbols
+
+libapr1-dev/bionic 1.6.3-2 amd64
+  Apache Portable Runtime Library - Development Headers
+
+libaprutil1/bionic 1.6.1-2 amd64
+  Apache Portable Runtime Utility Library
+
+libaprutil1-dbd-sqlite3/bionic 1.6.1-2 amd64
+  Apache Portable Runtime Utility Library - SQLite3 Driver
+
+libaprutil1-dbg/bionic 1.6.1-2 amd64
+  Apache Portable Runtime Utility Library - Debugging Symbols
+
+libaprutil1-dev/bionic 1.6.1-2 amd64
+  Apache Portable Runtime Utility Library - Development Headers
+
+libaprutil1-ldap/bionic 1.6.1-2 amd64
+  Apache Portable Runtime Utility Library - LDAP Driver
+
+python-kazoo/bionic 2.2.1-1ubuntu1 all
+  higher level API to Apache Zookeeper (Python 2)
+
