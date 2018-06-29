@@ -1,0 +1,52 @@
+
+Thema24-15-UBU-17-10-slave:
+    Hit:1 http://security.ubuntu.com/ubuntu bionic-security InRelease
+    Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic InRelease
+    Get:3 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease [83.2 kB]
+    Get:4 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+    Hit:5 https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial InRelease
+    Fetched 158 kB in 2s (82.9 kB/s)
+    Reading package lists...
+Thema24-15-UBU-18-04-master:
+    Hit:1 http://azure.archive.ubuntu.com/ubuntu bionic InRelease
+    Hit:2 http://azure.archive.ubuntu.com/ubuntu bionic-updates InRelease
+    Hit:3 http://azure.archive.ubuntu.com/ubuntu bionic-backports InRelease
+    Hit:4 http://security.ubuntu.com/ubuntu bionic-security InRelease
+    Hit:5 https://repo.saltstack.com/apt/ubuntu/16.04/amd64/latest xenial InRelease
+    Reading package lists...
+Thema24-15-UBU-17-10-slave:
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    apache2 is already the newest version (2.4.29-1ubuntu4.1).
+    apache2-utils is already the newest version (2.4.29-1ubuntu4.1).
+    0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+Thema24-15-UBU-17-10-slave:
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    libcgi-fast-perl is already the newest version (1:2.13-1).
+    libapache2-mod-fcgid is already the newest version (1:2.3.9-1).
+    0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+Thema24-15-UBU-17-10-slave:
+    Module fcgid already enabled
+Thema24-15-UBU-17-10-slave:
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    munin is already the newest version (2.0.37-1ubuntu0.1).
+    0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
+Thema24-15-UBU-17-10-slave:
+    ----------
+    /etc/munin/munin.conf:
+        True
+Thema24-15-UBU-17-10-slave:
+    ----------
+    /etc/munin/apache.conf:
+        True
+Thema24-15-UBU-18-04-master:
+    Reading package lists...
+    Building dependency tree...
+    Reading state information...
+    munin-node is already the newest version (2.0.37-1ubuntu0.1).
+    0 upgraded, 0 newly installed, 0 to remove and 8 not upgraded.
