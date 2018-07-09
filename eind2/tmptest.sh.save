@@ -1,14 +1,22 @@
+
 #!/bin/bash
+echo "*$1*"
+test=master
+salt "*$test*" cmd.run "echo '$test'"
+
+salt "*$test" cmd.run 'apt-get install -y apache2 apache2-utils'
+
 muninmaster=slave
-echo "muninmaster is $muninmaster"
+echo "$muninmaster"
 #MuninNode
 muninnode='master'
-echo "muninnode is $muninnode"
+echo "$muninnode"
 # Master        10.0.0.4
 # Slave         10.0.0.5
 muninnode='master'
 salt "*" cmd.run 'apt-get update'
 echo 'install muninmaster'
+salt "*$muninmaster" cmd.run 'apt-get install -y apache2 apache2-utils'
 salt "*$muninmaster" cmd.run 'apt-get install -y apache2 apache2-utils'
 salt "*$muninmaster" cmd.run 'apt-get install -y libcgi-fast-perl libapache2-mod-fcgid'
 salt "*$muninmaster" cmd.run 'a2enmod fcgid'

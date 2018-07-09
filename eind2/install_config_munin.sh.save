@@ -1,0 +1,28 @@
+#!/bin/bash
+echo "$1"
+#MuninMaster
+mm=slave
+echo "$mm"
+#MuninNode
+mn='master'
+echo "$mm"
+# Master        10.0.0.4
+# Slave         10.0.0.5
+salt "*" cmd.run 'apt-get update'
+echo 'install muninmaster'
+salt "*$test" cmd.run 'apt-get install -y apache2 apache2-utils'
+salt "$mm" cmd.run 'apt-get install -y apache2 apache2-utils'
+echo 'testaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'
+salt "*$mm" cmd.run 'apt-get install -y libcgi-fast-perl libapache2-mod-fcgid'
+salt "*$mm" cmd.run 'a2enmod fcgid'
+salt "*$mm" cmd.run 'apt-get install -y munin'
+#echo 'apt-get install -y munin'
+#chance config file's
+salt-cp "*$mm" ../salt_conf2/munin.conf /etc/munin/munin.conf
+salt-cp "*$mm" ../salt_conf2/apache.conf /etc/munin/apache.conf
+##########################################
+salt "*$mm" cmd.run 'apt-get install -y munin-node'
+salt-cp "*$mm" ../salt_conf2/munin_node.conf /etc/munin/munin-node.conf
+salt "*" cmd.run 'service munin-node restart'
+salt "*$mm" cmd.run 'service apache2 restart'
+
