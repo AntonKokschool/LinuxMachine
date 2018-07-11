@@ -1,26 +1,15 @@
 #!/bin/bash
 echo "*$1*"
-test=master
-salt "*$test*" cmd.run "echo '$test'"
-
-salt "*$test" cmd.run 'apt-get install -y apache2 apache2-utils'
-
-muninmaster=slave
-echo "$muninmaster"
+syslogmaster=master
+echo "$syslogmaster"
 #MuninNode
-muninnode='master'
-echo "$muninnode"
+syslognode=slave
+echo "$syslognode"
 # Master        10.0.0.4
 # Slave         10.0.0.5
-muninnode='master'
 salt "*" cmd.run 'apt-get update'
 echo 'install muninmaster'
-salt "*$muninmaster" cmd.run 'apt-get install -y apache2 apache2-utils'
-salt "*$muninmaster" cmd.run 'apt-get install -y apache2 apache2-utils'
-salt "*$muninmaster" cmd.run 'apt-get install -y libcgi-fast-perl libapache2-mod-fcgid'
-salt "*$muninmaster" cmd.run 'a2enmod fcgid'
-salt "*$muninmaster" cmd.run 'apt-get install -y munin'
-#echo 'apt-get install -y munin'
+salt "*$syslogmaster" cmd.run 'apt-get install syslog-ng'
 #chance config file's
 salt-cp "*$muninmaster" ../salt_conf2/munin.conf /etc/munin/munin.conf
 salt-cp "*$muninmaster" ../salt_conf2/apache.conf /etc/munin/apache.conf
